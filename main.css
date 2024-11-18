@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #EFEFEF;
+}
+header {
+    display: flex; /* Deixa alinhado*/
+    align-items: center;
+    margin-bottom: 40px;
+}
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+header h1   {
+    font-size: 40px;
+    font-weight: bold;
+}
+.container {
+    /* Ocupa a tela em 100% até 960 px, faz que sempre fique centralizado e melhora a leitura em certos monitores */
+    max-width: 960px;       
+    width: 100%;
+    /* Ocupa a tela em 100% até 960 px, faz que sempre fique centralizado e melhora a leitura em certos monitores */
+    margin: 0 auto; /* Centaliza na horizontal */
+}
+
+
+form {
+    display: flex; /* vai deixar o formulario do mesmo tamanho do botao (o formulario tava maior por conta da borda) */
+    max-width: 640px; /* area maxima */
+    width: 100%; /* aplica a area maxima */
+    justify-content: space-between; /* distribue o espaçamento entre os itens */
+    margin-bottom: 60px;
+}
+
+
+
+form input {
+    background-color: #fff;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px;
+}
+
+table th /* Cabeçalho da tabela */
+{
+    padding: 16px;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%; /* faz a tabela ocupar 100% do container */
+}
+
+table td {
+    padding: 24px 0; /* 8px de espaçamento em cima e em baixo e 0 nas laterais */ 
+    text-align: center; /* vai alinhar os valores  */
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0, 0.5) /* 0.5 é a trasparencia */ 
+}
+
+table td img {
+    height: 30px;
+}
+
+form button {
+    background-color: green;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.resultado {
+    color: #fff;
+    padding: 8px;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 3px; /* deixa arredondado */
+}
+
+.reprovado{
+    background-color: red;
+}
+.aprovado {
+    background-color: green;
+}
