@@ -53,7 +53,7 @@ function atualizarTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaNotaFinal() 
 
-    document.getElementById("media-final-valor").innerHTML = mediaFinal
+    document.getElementById("media-final-valor").innerHTML = mediaFinal.toFixed(2) /*Limíta as casas decimais em (valor) */
     document.getElementById("media-final-resultado").innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
